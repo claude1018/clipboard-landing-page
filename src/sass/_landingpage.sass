@@ -1,0 +1,65 @@
+@use "./_config" as conf
+
+section.intro
+  text-align: center
+  padding: clamp(conf.$fs-500 * 4.5, 9vw + 1rem ,conf.$fs-400 * 8) conf.$padding-def
+  background: url(/src/images/bg-header-mobile.png) no-repeat
+  figure
+    margin-bottom: conf.$fs-400 * 2.5
+  h1
+    font-size: clamp(conf.$fs-600, 3vw + 1rem, conf.$fs-600 * 2)
+    color: conf.$dark-grayish-blue
+    margin-bottom: conf.$fs-400
+  p
+    margin-bottom: conf.$fs-500 * 2
+    color: conf.$grayish-blue
+    background-color: transparent
+    @include conf.fs-body()
+    
+.features
+  padding: 0 conf.$padding-def
+  figure 
+    margin-top: clamp(conf.$fs-400, 2vw + 1rem , conf.$fs-400 * 4)
+    width: 100%
+    text-align: center
+    img // tablet and phone img
+      width: min(100%, conf.$fs-200 * 82.5)
+      height: auto
+  .misc
+    figure 
+      margin-top: conf.$fs-500
+      margin-bottom: conf.$fs-500
+      img // computer img
+        width: 100%
+        height: auto
+
+.logos
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+  gap: conf.$fs-600 * 2
+  margin-bottom: conf.$fs-600 * 4.375
+  figure img
+    width: clamp(conf.$fs-500 * 5.75, 5vw + 1rem, 175px)
+
+.do
+  margin-bottom: conf.$fs-400 * 5.625
+  .w-icon 
+    width: min(100%, conf.$fs-500 * 16.5)
+    margin-inline: auto
+    figure  
+      img
+        height: 2.875rem
+        width: 2.875rem
+        object-fit: contain
+        margin: auto 0
+    h3
+     margin-top: conf.$fs-400 * 2
+    p
+      margin-inline: auto
+
+.download
+  margin-bottom: conf.$fs-200 * 6.75
+  p 
+    margin-bottom: conf.$fs-400 * 2

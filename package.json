@@ -1,0 +1,21 @@
+{
+  "name": "clipboard-landing-page",
+  "version": "1.0.0",
+  "description": "challenge from frontendmentor",
+  "parcel-namer-custom": {
+    ".sass$": "app/css/[name]-hash.[type]",
+    ".(svg|png|jpe?g)$": "app/images/[name]-hash.[type]"
+  },
+  "scripts": {
+    "start": "parcel ./src/index.html --port 3000 --dist-dir ./_dev",
+    "build": "parcel build ./src/index.html --dist-dir ./build --public-url ./"
+  },
+  "author": "claude",
+  "license": "MIT",
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.4.1",
+    "parcel": "^2.4.1",
+    "parcel-namer-custom": "^0.2.0",
+    "posthtml-include": "^1.7.3"
+  }
+}

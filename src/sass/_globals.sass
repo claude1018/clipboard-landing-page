@@ -1,0 +1,89 @@
+@use './_config' as conf
+  
+*
+  box-sizing: border-box
+  padding: 0
+  margin: 0
+
+html
+  font-family: 'Bai Jamjuree', sans-serif
+  font-size: 16px
+
+body
+  height: 100vh
+
+li
+  list-style: none
+
+a 
+  text-decoration: none
+
+/* for layouts that has the same design */
+
+.buttons
+  & > * 
+    display: block
+    all: unset
+    width: 100%
+    text-align: center
+    border-radius: conf.$fs-600
+    padding: conf.$fs-400 0
+    color: conf.$white
+    font-weight: bold
+
+  button:first-child
+    cursor: pointer
+    background: conf.$strong-cyan
+    box-shadow: 0px 3.2px 0px 0px darken(conf.$strong-cyan, 9)
+    margin-bottom: conf.$fs-500
+    &:hover
+      background: rgba(conf.$strong-cyan, .95 )
+  button:last-child
+    cursor: pointer
+    background: conf.$light-blue
+    box-shadow: 0px 3.2px 0px 0px darken(conf.$light-blue, 7)
+    &:hover
+      background: rgba(conf.$light-blue, .85 )
+
+.strong
+  text-align: center
+  padding: conf.$padding-base * 2 conf.$padding-def
+  h2
+    color: conf.$dark-grayish-blue
+    margin-bottom: conf.$padding-base
+    font-size: clamp(conf.$fs-500, 3vw + 1rem, conf.$fs-400 * 2)
+    
+  p
+    color: conf.$grayish-blue
+    @include conf.fs-body()
+
+.small
+  text-align: center
+  padding: conf.$padding-base * 2 conf.$padding-def
+  h3
+    color: conf.$dark-grayish-blue
+    margin-bottom: conf.$padding-base
+    font-size: clamp(conf.$fs-500, 3vw + 1rem, conf.$fs-600 - 2px)
+  p
+    color: conf.$grayish-blue
+    font-size: clamp(conf.$fs-400, 0.5vw + 0.625rem, conf.$fs-default)
+    width: min(100%, conf.$fs-400 * 21.25)
+    margin-inline: auto
+.group
+  margin: conf.$fs-500 0
+  li 
+    margin-bottom: conf.$fs-300
+    a
+      color: conf.$dark-grayish-blue
+
+aside 
+  text-align: center
+  margin-top: conf.$fs-700
+  p.attribution
+    color: conf.$dark-grayish-blue
+    margin-bottom: conf.$fs-200
+    font-size: clamp(conf.$fs-300, 1.09vw + 0.3rem, conf.$fs-400)
+    a
+      color: conf.$strong-cyan
+      font-weight: 600
+      

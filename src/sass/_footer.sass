@@ -1,0 +1,25 @@
+@use './_config' as conf
+
+footer
+  text-align: center
+  padding-top: conf.$fs-200 * 6.75
+  background: #F5F6F8
+  figure img
+    width: conf.$fs-700 * 1.5
+    height: auto
+  nav.footer__links
+    padding: conf.$fs-400 0
+    ul li a
+      &:hover
+        color: conf.$strong-cyan
+  .social-icons
+    margin-top: conf.$fs-700 + conf.$fs-200
+    margin-bottom: 0
+    display: flex
+    justify-content: center
+    align-items: center
+    gap: conf.$fs-700
+    & li a 
+      font-size: conf.$fs-400 * 1.5
+  
+  
