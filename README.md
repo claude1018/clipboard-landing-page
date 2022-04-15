@@ -29,8 +29,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [FrontendMentor](https://your-solution-url.com)
-- Live Site URL: [Github Pages](https://your-live-site-url.com)
+- Solution URL: [FrontendMentor](https://www.frontendmentor.io/solutions/clipboard-landing-page-using-sass-BkLf5jU4c)
+- Live Site URL: [Github Pages](https://claude1018.github.io/clipboard-landing-page/)
 
 ## My process
 
